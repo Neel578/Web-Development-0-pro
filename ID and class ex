@@ -1,0 +1,50 @@
+1. ID in Web Development
+An ID is a unique identifier assigned to a single HTML element. It is used when you need to style or manipulate one specific element.
+
+Syntax (HTML)
+html
+Copy
+Edit
+<div id="uniqueElement">This is a unique div</div>
+CSS Example
+css
+Copy
+Edit
+#uniqueElement {
+    color: red;
+    font-size: 20px;
+}
+💡 Key Points:
+
+IDs must be unique within a page.
+
+Used when you want to target a single element specifically.
+
+In CSS, IDs are selected using # (hash symbol).
+
+In JavaScript, you can access an element by document.getElementById("uniqueElement").
+
+2. Class in Web Development
+A Class is used to style or manipulate multiple elements that share the same characteristics.
+
+Syntax (HTML)
+html
+Copy
+Edit
+<div class="commonStyle">This is a styled div</div>
+<p class="commonStyle">This is a styled paragraph</p>
+CSS Example
+css
+Copy
+Edit
+.commonStyle {
+    color: blue;
+    font-size: 18px;
+}
+💡 Key Points:
+
+Classes can be used multiple times on different elements.
+
+In CSS, classes are selected using . (dot symbol).
+
+In JavaScript, you can access multiple elements using document.getElementsByClassName("commonStyle").
