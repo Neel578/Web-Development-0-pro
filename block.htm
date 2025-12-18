@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block and Inline Elements</title>
+    <style>
+        .block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .inline {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .image {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Block Element: <div> and <h1> -->
+    <div class="block">
+        <h1>This is a Block Element</h1>
+        <p>A block element like this <code>&lt;div&gt;</code> takes up the full width of its container.</p>
+    </div>
+
+    <!-- Block Element: <p> with Inline Elements inside -->
+    <p>This is a paragraph, which is also a block element, but it contains <span class="inline">inline text</span>, an <a href="#" class="inline">inline link</a>, and <strong class="inline">bold text</strong>. These are all examples of inline elements.</p>
+
+    <!-- Inline Image inside a Block Element -->
+    <div class="block">
+        Here is an inline image within a block-level <code>&lt;div&gt;</code>:
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="image">
+    </div>
+
+    <!-- Block and Inline Example with Form -->
+    <form class="block">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" class="inline">
+        <button type="submit" class="inline">Submit</button>
+    </form>
+
+</body>
+</html>
