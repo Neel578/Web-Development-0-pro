@@ -1,0 +1,21 @@
+th{
+    border: solid black 3px;
+}
+td{
+    border: solid red 3px;
+}
+ul{
+    border: solid black 3px;
+}
+ol{
+    border: solid red 3px;
+}
+dl{
+    border: solid black 3px;
+}
+dt{
+    border: solid red 3px;
+}
+dd{
+    border: solid black 3px;
+}
