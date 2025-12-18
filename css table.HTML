@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="css table.css">
+    <script src="css table.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">CodingLab</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search here..." class="search-box">
+                <span class="close-icon" onclick="toggleSearch()">&#10006;</span>
+                <span class="search-icon" onclick="toggleSearch()">&#128269;</span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="close-btn" onclick="toggleMenu()">&#10006;</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</body>
+</html>
