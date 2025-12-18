@@ -1,0 +1,1 @@
+alert("clik the link to get more informetion")
