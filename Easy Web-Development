@@ -1,0 +1,37 @@
+# 🌱 Easy Web Development
+
+This folder/repository is created for **beginners in web development**.
+
+It covers the **basic concepts of web development** in a simple and easy way,
+starting from HTML, then CSS, and basic JavaScript.
+
+This is the **first step** in my Web Development 0 → Pro journey.
+
+---
+
+## 📚 What You Will Learn Here
+
+### 🔹 HTML (Basics)
+- Structure of a web page
+- Headings, paragraphs
+- Images and links
+- Lists and tables
+- Forms (basic)
+
+### 🔹 CSS (Basics)
+- Colors and fonts
+- Box model
+- Flexbox (intro)
+- Styling layouts
+- Simple hover effects
+
+### 🔹 JavaScript (Basics)
+- Variables
+- Functions
+- Events
+- Basic DOM manipulation
+
+---
+
+## 📁 Folder Structure
+
