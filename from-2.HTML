@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handler</title>
+    <link rel="stylesheet" href="from-2.css">
+    <script src="form-2.js"></script>
+    <script>
+        // Function to handle form submission and get form values
+        function handleForm(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get form elements
+            let form = document.forms["myForm"];
+            
+            // Get input values
+            let formData = {
+                textValue: form["textInput"].value,
+                emailValue: form["emailInput"].value,
+                passwordValue: form["passwordInput"].value,
+                checkboxValue: form["checkboxInput"].checked,
+                radioValue: form["radioInput"].value,
+                selectValue: form["selectInput"].value,
+                textareaValue: form["textareaInput"].value
+            };
+
+            // Output form data
+            console.log("Form Data:", formData);
+
+            alert("Form Submitted! Check console for data.");
+        }
+    </script>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    <form name="myForm" onsubmit="handleForm(event)">
+        <!-- Text Input -->
+        <label for="textInput">Text:</label>
+        <input type="text" id="textInput" name="textInput" required><br><br>
+
+        <!-- Email Input -->
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" name="emailInput" required><br><br>
+
+        <!-- Password Input -->
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwordInput" name="passwordInput" required><br><br>
+
+        <!-- Checkbox -->
+        <label for="checkboxInput">Accept Terms:</label>
+        <input type="checkbox" id="checkboxInput" name="checkboxInput"><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="radioInput" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="radioInput" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Dropdown/Select -->
+        <label for="selectInput">Choose a color:</label>
+        <select id="selectInput" name="selectInput">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="textareaInput">Comments:</label><br>
+        <textarea id="textareaInput" name="textareaInput" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
