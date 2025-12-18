@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;  /* Ensures the box stays within the viewport */
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;  /* Initial background color */
+    position: absolute;         /* Allows the box to move around the screen */
+    animation: moveAndColor 5s infinite;  /* Apply the animation */
+}
+
+/* Keyframes for the animation */
+@keyframes moveAndColor {
+    0% {
+        background-color: #3498db;  /* Start with blue */
+        transform: translate(0, 0); /* Start position */
+    }
+    25% {
+        background-color: #e74c3c;  /* Change to red */
+        transform: translate(200px, 0); /* Move right */
+    }
+    50% {
+        background-color: #2ecc71;  /* Change to green */
+        transform: translate(200px, 200px); /* Move down */
+    }
+    75% {
+        background-color: #f1c40f;  /* Change to yellow */
+        transform: translate(0, 200px); /* Move left */
+    }
+    100% {
+        background-color: #3498db;  /* Back to blue */
+        transform: translate(0, 0); /* Back to start */
+    }
+}
